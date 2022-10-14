@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-Link: [https://chrisliang12.github.io/Lab2_Starter/](https://chrisliang12.github.io/Lab2_Starter/)
+# Lab 3
+Link: [https://chrisliang12.github.io/fa22-cse110-lab3/](https://chrisliang12.github.io/fa22-cse110-lab3/)
