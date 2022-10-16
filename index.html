@@ -2,17 +2,24 @@
 <html lang="en">
   <head>
     <title>Meeting Minutes Sample</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link> to a favicon -->
   </head>
   <body>
-    <header><nav>CSE110 Lab 2 - Yong Liang</nav></header>
+    <header><nav id="nav-title">CSE110 Lab 2 - Yong Liang</nav></header>
     <main>
       <section>
         <h1>Pathfinding Visualizer Brainstorm</h1>
         <h2>Date: 10/04/2022</h2>
       </section>
-      <hr>
+      <hr />
       <h2>Attendees</h2>
       <div>
         <ul>
@@ -70,47 +77,71 @@
         <li>Support both 4 and 8 direction movements</li>
         <li>Responsive website</li>
       </ul>
-      <h2>Pictures</h2>
-      <img src="img/sample.png" width="800" alt="a screen shot of a sample visualizer">
-      <h2>Video & Audio</h2>
-      <div>
-        <video width="800" controls>
-          <source
-            src="video/React-Pathfinding-Visualizer.webm"
-            type="video/webm"
-          >
-        </video>
+      <div class="grid">
+        <div class="grid-item">
+          <h2>Pictures</h2>
+          <img
+            src="img/sample.png"
+            width="500"
+            alt="a screen shot of a sample visualizer"
+          />
+        </div>
+        <div class="grid-item">
+          <h2>Video & Audio</h2>
+          <div>
+            <video width="500" controls>
+              <source
+                src="video/React-Pathfinding-Visualizer.webm"
+                type="video/webm"
+              />
+            </video>
+          </div>
+
+          <br />
+          <div>
+            <audio controls>
+              <source
+                src="audio/Free_Test_Data_100KB_MP3.mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
+        </div>
       </div>
-      <br>
-      <div>
-        <audio controls>
-          <source src="audio/Free_Test_Data_100KB_MP3.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-      <br>
+      <br />
 
       <details>
         <summary>Forms</summary>
         <form>
-          <fieldset>
-            <input type="checkbox">Test
-            <input type="radio" name="test-radio" checked>Test1
-            <input type="radio" name="test-radio">Test2
-            <input type="text">
-            <input type="date">
+          <fieldset class="fieldset-test">
+            <div class="fieldset-child">
+              <input type="checkbox" id="checkbox-test" />Test
+            </div>
+            <div class="fieldset-child">
+              <input type="radio" name="test-radio" id="radio1" checked />Test1
+            </div>
+            <div class="fieldset-child">
+              <input type="radio" name="test-radio" id="radio2" />Test2
+            </div>
+            <div class="fieldset-child">
+              <input type="text" id="text-test" />
+            </div>
+            <div class="fieldset-child">
+              <input type="date" id="date-test" />
+            </div>
           </fieldset>
-          <br>
+          <br />
           Textarea for Test:
           <div>
             <textarea name="test-textarea" cols="30" rows="10"></textarea>
           </div>
-          <br>
+          <br />
           <div>
             Datalist Example:
             <label for="browser"
               >Choose your favorite browser from the list:</label
             >
-            <input list="browsers" name="browser" id="browser">
+            <input list="browsers" name="browser" id="browser" />
             <datalist id="browsers">
               <option value="Edge"></option>
               <option value="Firefox"></option>
@@ -119,7 +150,7 @@
               <option value="Safari"></option>
             </datalist>
           </div>
-          <br>
+          <br />
           <div>
             Select Example:
             <label for="cars">Choose your favorite brand:</label>
@@ -131,7 +162,7 @@
               <option value="audi">Audi</option>
             </select>
           </div>
-          <br>
+          <br />
           <div>
             Test Button:
             <button type="button">Click Me!</button>
