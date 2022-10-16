@@ -1,0 +1,89 @@
+* {
+    background-color: #FEFBF6;
+}
+
+/* use multiple color in one selector just for assignment */
+body {
+    color: rgb(255,255,255);
+    color: white;
+    color: hsl(360, 100,100);
+    color: #3D3C42;
+    font-size: 16px;
+    margin-left: 0.5292cm;
+    margin: 1.25rem 1.25rem 5.292mm 1.25em;
+    padding: 1vw 1vw 1vw 1vw;
+    padding-left: 1px;
+    position: relative;
+    font-family: Roboto;
+}
+
+hr {
+    border: 2px solid black;
+    border-width: 2px;
+}
+
+nav {
+    text-decoration: underline;
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 5px;
+}
+
+h1, h2 {
+    margin-bottom: 0px;
+}
+
+h1 {
+    display: inline-block;
+    height: 28px;
+    width: 480px;
+    max-width: 500px;
+    min-width: 470px;
+    margin-bottom: 0mm;
+}
+
+h1:hover {
+    color: #A6D1E6;
+}
+
+button:active {
+    color: #A6D1E6;
+}
+
+.fieldset-test {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.fieldset-child {
+    width: 80px;
+    height: 20px;
+    margin: auto;
+}
+
+@media (max-width: 500px) {
+    .fieldset-test {
+        flex-direction: column;
+    }
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+/* for css selector assignments */
+#nav-title {
+    opacity: 25%;
+}
+
+audio[controls] {
+    height: 50px;
+}
+
+div > video {
+    height: auto;
+}
